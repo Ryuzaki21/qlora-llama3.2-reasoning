@@ -48,7 +48,7 @@ else:
     reasoning_dataset = []
     start_index = 0
     print("starting fresh")
-
+# planned to generate 2000 samples but stopped at 1203 due to rate limits
 for i, sample in enumerate(dataset.select(range(start_index, 2000))):
     try:
         question = sample["question"]
